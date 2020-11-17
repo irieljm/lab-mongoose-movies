@@ -1,0 +1,23 @@
+<h1>movies</h1>
+{{#each movies}}
+    <p>
+        <h2><b>title</b>: </b>{{title}}</h2>
+        <p><b>Genre</b>: {{genre}}</p>
+        <p><b>Plot</b>: {{plot}}</p>
+{{!-- Iteration 9 - display full cast list --}}
+        <p> Cast Members:
+            <ul>
+                {{#each cast}}
+                    <li>{{name}}</li>
+                {{/each}}
+            </ul>
+        </p>
+    </p>
+    <button><a href="/movies/edit/{{_id}}">Edit this movie</a></button>
+    
+{{/each}}
+<button> <a href="/movies/new">Add a movie</a> </button>
+<br>
+<br>
+<br>
+<a href="/">return to homepage</a>
