@@ -7,11 +7,14 @@ const movieSchema = new Schema({
   plot: String,
   cast: [
     {
-      type: Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId, 
       ref: 'Celebrity'
+    }]
+}, {
+    timestamps: {
+      createdAt: "created_at",
+      updatedAt: "updated_at"
     }
-  ]
-
 });
 
 const Movie = mongoose.model('Movie', movieSchema);

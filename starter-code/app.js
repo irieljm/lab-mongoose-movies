@@ -44,6 +44,15 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+// hbs.registerHelper('select', function(movie){
+//   let selected = '';
+//   if (movie.cast.map(actor => actor.id).includes(this._id)) {
+//     selected = "selected";
+//   }
+//   return '<option value="' +this._id + '" '+ selected + '>' + this.name + '</option>'
+// });
+
+
 
 
 // default value for title local

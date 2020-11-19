@@ -9,8 +9,8 @@
   <label for="plot">Plot: </label> 
   <input id="plot" type="text" name="plot">
   
-  <label for="cast">Cast: </label> 
-  <select name="cast" id="">
+
+  <select name="cast" multiple>
     {{#each celebrities}}
     <option value="{{_id}}">{{name}}</option>
     {{/each}}
